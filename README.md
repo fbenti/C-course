@@ -1,1 +1,1 @@
-# c-
+# DTU course - C++ programming
