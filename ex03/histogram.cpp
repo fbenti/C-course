@@ -1,5 +1,5 @@
 #include <iostream>
-#include <new>
+// #include <new>
 #include "math.h"
 
 using namespace std;
@@ -11,8 +11,11 @@ int main()
     cin >> l;
     cin >> n;
     
-    auto set = new int[n];
-    auto hist = new int[l];
+    // when initialize a pointer set in to null
+    // int *set = nullptr; 
+    // set = new int[n];
+    int *set = new int[n];
+    int *hist = new int[l];
 
     for (int i = 0; i < n; i++)
     {
@@ -36,5 +39,9 @@ int main()
     {
         cout << k*i << ": " << hist[i] << endl;
     }
+
+    // REMEMBER TO DEALLOCATE MEMORY
+    delete[] set;
+    delete[] hist;
     return 0;
 }
