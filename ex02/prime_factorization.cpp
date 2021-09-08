@@ -12,7 +12,6 @@ int main()
     }
     int n = stoi(temp);
 
-    int array[] = {};
     int idx = 0;
     for (int i = 2; i <= n; i++) {
         while (n % i == 0) {
